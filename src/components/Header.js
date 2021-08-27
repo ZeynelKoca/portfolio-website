@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container">
         <div className="center-screen">
           <div className="header-wrapper">
-            <Fade bottom delay={100}>
+            <Fade bottom>
               <h2>
                 Hi, I'm {data.name}{" "}
                 <span role="img" aria-label="Emoji">
@@ -20,7 +20,7 @@ const Header = () => {
                 </span>
               </h2>
             </Fade>
-            <Fade bottom cascade delay={100}>
+            <Fade bottom cascade>
               <div className="heading-wrapper">
                 <h1>
                   {data.headerTagline[0]
@@ -41,10 +41,10 @@ const Header = () => {
                 </h1>
               </div>
             </Fade>
-            <Fade bottom delay={100}>
+            <Fade bottom>
               <p>{data.headerParagraph}</p>
             </Fade>
-            <Fade bottom delay={100}>
+            <Fade bottom>
               <button className="button-about" onClick={() => scrollTo("#about")}>
                 About Me <FontAwesomeIcon icon={ faArrowDown } className="arrow bounce" style={{color: "#ededed"}} />
               </button>
