@@ -1,15 +1,15 @@
 import meIcon from "./images/me.jpg"
 
 // Projects Icons
-import keukenhofIcon from "./images/projects/keukenhof.png"
-import pathfindingIcon from "./images/projects/pathfinding.png"
-import fullhouseIcon from "./images/projects/fullhouse.png"
-import modmenuIcon from "./images/projects/mod-menu.png"
-import dierendorpIcon from "./images/projects/dierendorp.png"
-import obfuskeerIcon from "./images/projects/obfuskeer.png"
-import intListIcon from "./images/projects/int-list.png"
-import twitterbotIcon from "./images/projects/twitter-bot.png"
-import portfolioWebsiteIcon from "./images/projects/portfolio.png"
+import keukenhofIcon from "./images/projects/keukenhof.webp"
+import pathfindingIcon from "./images/projects/pathfinding.webp"
+import fullhouseIcon from "./images/projects/fullhouse.webp"
+import modmenuIcon from "./images/projects/mod-menu.webp"
+import dierendorpIcon from "./images/projects/dierendorp.webp"
+import obfuskeerIcon from "./images/projects/obfuskeer.webp"
+import intListIcon from "./images/projects/int-list.webp"
+import twitterbotIcon from "./images/projects/twitter-bot.webp"
+import portfolioWebsiteIcon from "./images/projects/portfolio.webp"
 
 // Projects showcases
 import dierendorpGif from "./images/projects/dierendorp-showcase.gif"
