@@ -25,7 +25,7 @@
       cursor: pointer;
 
       @include media(">=phone", "<tablet"){
-        padding: 10px;
+        padding: 5px;
       }
 
       &:hover {
