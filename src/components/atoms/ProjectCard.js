@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
         onHide={() => setModalShow(false)}
       />
 
-      <div className="content" role="button" tabIndex={props.id} onClick={() => setModalShow(true)} onKeyDown={() => setModalShow(true)}>
+      <div className="content" role="button" tabIndex={0} onClick={() => setModalShow(true)} onKeyDown={() => setModalShow(true)}>
         <h1 className="header">{props.heading}</h1>
         {props.tags.map((tag, index) => (
           <span key={index} className="tag">{tag}</span>

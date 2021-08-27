@@ -19,7 +19,6 @@ const Projects = () => {
               {data.projects.map((project, index) => (
                 <ProjectCard
                   key={index}
-                  id={index}
                   heading={project.title}
                   paragraphs={project.paragraphs}
                   tags={project.tags}

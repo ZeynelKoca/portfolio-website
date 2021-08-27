@@ -20,7 +20,7 @@ const VerticallyCenteredModal = (props) => {
         <Modal.Body>
           <img src={props.showcase} alt="Project" className="project-showcase" />
           {props.paragraphs.map((paragraph, index) => (
-            <p key={index} index={index}>{paragraph}</p>
+            <p key={index}>{paragraph}</p>
           ))}
         </Modal.Body>
         <Modal.Footer>
