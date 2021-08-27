@@ -1,0 +1,41 @@
+.projects-wrapper {
+  width: 80vw;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ededed;
+  @include media(">=phone", "<tablet"){
+    margin-top: 8vh;
+  }
+  @include media(">=4k"){
+    margin-top: 10vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    @include media(">=phone", "<lgphone") {
+      grid-template-columns: 1fr;
+    }
+    @include media(">=lgphone", "<tablet") {
+      grid-template-columns: 1fr;
+    }
+    @include media(">=tablet", "<desktop") {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media(">=4k"){
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+}
