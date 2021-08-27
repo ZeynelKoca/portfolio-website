@@ -1,4 +1,4 @@
-import meIcon from "./images/me.jpg"
+import meIcon from "./images/me.webp"
 
 // Projects Icons
 import keukenhofIcon from "./images/projects/keukenhof.webp"
