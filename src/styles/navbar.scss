@@ -24,6 +24,10 @@
       border: 0px;
       cursor: pointer;
 
+      @include media(">=phone", "<tablet"){
+        padding: 10px;
+      }
+
       &:hover {
         opacity: 1;
       }

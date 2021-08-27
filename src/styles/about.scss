@@ -69,10 +69,8 @@
     margin-right:auto;
     max-width: 25em;
     border-radius: 8px;
-    @include media(">=phone", "<lgphone") {
-      max-width: 10%;
-    }
-    @include media(">=lgphone", "<tablet") {
+    
+    @include media(">=phone", "<tablet") {
       margin-top: 0em;
       max-width: 80%;
     }

@@ -31,16 +31,18 @@ const Contact = () => {
             <a href={`mailto:${data.contactEmail}`}>{data.contactEmail}</a>
           </Fade>
 
-          <form className="contact-form" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
-            <label htmlFor="form-name">Name</label>
-            <input type="text" name="name" id="form-name" />
-            <label htmlFor="form-email">Email *</label>
-            <input type="email" name="user_email" id="form-email" required />
-            <label htmlFor="form-message">Message *</label>
-            <textarea name="message" required id="form-message" />
-            <input type="submit" value="Send" className="form-send" />
-          </form>
+          <Fade bottom cascade delay={100}>
+            <form className="contact-form" onSubmit={sendEmail}>
+              <input type="hidden" name="contact_number" />
+              <label htmlFor="form-name">Name</label>
+              <input type="text" name="name" id="form-name" />
+              <label htmlFor="form-email">Email *</label>
+              <input type="email" name="user_email" id="form-email" required />
+              <label htmlFor="form-message">Message *</label>
+              <textarea name="message" required id="form-message" />
+              <input type="submit" value="Send" className="form-send" />
+            </form>
+          </Fade>
 
           <h4>{status}</h4>
 
