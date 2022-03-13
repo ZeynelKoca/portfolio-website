@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button"
 import { Link } from "gatsby";
 
 const GetDemoButton = (props) => {
-  if (props.demo.charAt(0) != "/"){
+  if (props.demo.charAt(0) !== "/"){
     return <Button onClick={props.onHide} variant="success" href={props.demo} target={"_blank"}>Demo</Button>
   }
 

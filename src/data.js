@@ -11,6 +11,7 @@ import intListIcon from "./images/projects/int-list.webp"
 import twitterbotIcon from "./images/projects/twitter-bot.webp"
 import portfolioWebsiteIcon from "./images/projects/portfolio.webp"
 import mazeGeneratorIcon from "./images/projects/maze-generator.webp"
+import dungeonGeneratorIcon from "./images/projects/dungeon-generator.webp"
 
 // Projects showcases
 import dierendorpGif from "./images/projects/dierendorp-showcase.gif"
@@ -19,6 +20,7 @@ import pathfindingGif from "./images/projects/pathfinding-showcase.gif"
 import obfuskeerGif from "./images/projects/obfuskeer-usage.gif"
 import twitterbotGif from "./images/projects/twitterbot-showcase.gif"
 import mazeGeneratorGif from "./images/projects/maze-generator-showcase.gif"
+import dungeonGeneratorGif from "./images/projects/dungeon-generator-showcase.gif"
 
 // Social Icons
 import githubIcon from "./images/github.svg"
@@ -100,28 +102,17 @@ const data = {
     demo: undefined,
   },
   {
-    title: "FullHouse Content Management System", 
+    title: "Perfect Maze Generator", 
     paragraphs: [
-                "One of my earlier projects, after learning Java and MySQL for about half a year. The application was made for an imaginary poker company which was in need of a content management system to keep track of its players.",
-                "Looking at it from an outside perspective, it is simply a CRUD application which is linked to a database. No database framework was used for this project, so all MySQL queries were written by hand."
+                "This project was originally a programming case assignment by an unnamed company where I was to implement a perfect maze generator in Unity.",
+                "Since I finished the implementation of the generation algorithm within a few hours (of the given 20 hour limit), I decided to implement the A* path finding algorithm as well in this project.",
+                "The workings of both algorithms can be viewed by activating the Animations toggle in their respective menus."
                 ],
-    tags: ["Java", "Swing", "MySQL"],
-    imageSrc: fullhouseIcon,
-    showcase: fullhouseGif,
-    source: "https://github.com/ZeynelKoca/FullHouse-GUI",
-    demo: undefined,
-  },
-  {
-    title: "Pathfinding Visualizer", 
-    paragraphs: [
-                "This project signified the topics of algorithms and data structures. Most notably, pathfinding algorithms.",
-                "I did research on multiple algorithms and ended up implementing the A* algorithm for finding the shortest path between nodes (or in this case: cities) and implemented the 2-opt algorithm to solve the traveling salesman problem."  
-                ],
-    tags: ["Java", "Swing"],
-    imageSrc: pathfindingIcon,
-    showcase: pathfindingGif,
+    tags: ["C#", "Pathfinding", "Unity2D"],
+    imageSrc: mazeGeneratorIcon,
+    showcase: mazeGeneratorGif,
     source: undefined,
-    demo: undefined,
+    demo: "/maze-generator",
   },
   {
     title: "Obfuskeer", 
@@ -137,6 +128,18 @@ const data = {
     demo: undefined,
   },
   {
+    title: "Pathfinding Visualizer", 
+    paragraphs: [
+                "This project signified the topics of algorithms and data structures. Most notably, pathfinding algorithms.",
+                "I did research on multiple algorithms and ended up implementing the A* algorithm for finding the shortest path between nodes (or in this case: cities) and implemented the 2-opt algorithm to solve the traveling salesman problem."  
+                ],
+    tags: ["Java", "Swing"],
+    imageSrc: pathfindingIcon,
+    showcase: pathfindingGif,
+    source: undefined,
+    demo: undefined,
+  },
+  {
     title: "League of Legends int list",
     paragraphs: [
                 "This application is made to be used for the popular game League Of Legends. By using the game's official API endpoints, the application dynamically scans the game state and notifies the user when they have been put in a lobby with a target.",
@@ -147,6 +150,18 @@ const data = {
     showcase: intListIcon,
     source: "https://github.com/ZeynelKoca/LeagueOfLegends-int-list",
     demo: undefined,
+  },
+  {
+    title: "Procedural Dungeon Generator", 
+    paragraphs: [
+                "A simple Unity project where I implemented an algorithm for procedurally generating 2D dungeons.",
+                "This project can be demoed on my website so you can verify that every generated dungeon is indeed created randomly."
+                ],
+    tags: ["C#", "Unity2D"],
+    imageSrc: dungeonGeneratorIcon,
+    showcase: dungeonGeneratorGif,
+    source: "https://github.com/ZeynelKoca/procedural-dungeon-generator",
+    demo: "/dungeon-generator",
   },
   {
     title: "Twitter Bot", 
@@ -161,6 +176,18 @@ const data = {
     demo: "https://twitter.com/TwistUpdater",
   },
   {
+    title: "FullHouse Content Management System", 
+    paragraphs: [
+                "One of my earlier projects, after learning Java and MySQL for about half a year. The application was made for an imaginary poker company which was in need of a content management system to keep track of its players.",
+                "Looking at it from an outside perspective, it is simply a CRUD application which is linked to a database. No database framework was used for this project, so all MySQL queries were written by hand."
+                ],
+    tags: ["Java", "Swing", "MySQL"],
+    imageSrc: fullhouseIcon,
+    showcase: fullhouseGif,
+    source: "https://github.com/ZeynelKoca/FullHouse-GUI",
+    demo: undefined,
+  },
+  {
     title: "Portfolio Website", 
     paragraphs: [
                 "Obviously, it's the website you're seeing right now. This project was made during my last summer break of university, where I decided it would be a good time to finally create my personal portfolio website after accumulating enough knowledge and projects to showcase.",
@@ -173,20 +200,6 @@ const data = {
     source: "https://github.com/ZeynelKoca/portfolio-website",
     demo: "/",
   },
-  {
-    title: "Perfect Maze Generator", 
-    paragraphs: [
-                "This project was originally a programming case assignment by an unnamed company where I was to implement a perfect maze generator in Unity.",
-                "Since I finished the implementation of the generation algorithm within a few hours (of the given 20 hour limit), I decided to implement the A* path finding algorithm as well in this project.",
-                "The workings of both algorithms can be viewed by activating the Animations toggle in their respective menus."
-                ],
-    tags: ["C#", "Pathfinding", "Unity2D"],
-    imageSrc: mazeGeneratorIcon,
-    showcase: mazeGeneratorGif,
-    source: undefined,
-    demo: "/maze-generator",
-  },
-
   ],
   
   // End Projects Section -----------------------

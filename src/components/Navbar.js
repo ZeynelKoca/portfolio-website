@@ -9,7 +9,7 @@ const Navbar = () => {
   let onClick;
   let onKeyDown;
 
-  if (path == "/"){
+  if (path === "/"){
     onClick = () => scrollTo("#home");
     onKeyDown = () => scrollTo("#home");
   } else {
@@ -30,7 +30,7 @@ const Navbar = () => {
           >
             Zeynel Koca.
           </div>
-          { path == "/" && 
+          { path === "/" && 
             <div className="links-wrapper">
               <button onClick={() => scrollTo("#about")}>About</button>
               <button onClick={() => scrollTo("#projects")}>Projects</button>
