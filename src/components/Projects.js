@@ -24,6 +24,7 @@ const Projects = () => {
                   tags={project.tags}
                   img={project.imageSrc}
                   showcase={project.showcase}
+                  demo={project.demo}
                   source={project.source}
                 />
               ))}

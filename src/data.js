@@ -10,6 +10,7 @@ import obfuskeerIcon from "./images/projects/obfuskeer.webp"
 import intListIcon from "./images/projects/int-list.webp"
 import twitterbotIcon from "./images/projects/twitter-bot.webp"
 import portfolioWebsiteIcon from "./images/projects/portfolio.webp"
+import mazeGeneratorIcon from "./images/projects/maze-generator.webp"
 
 // Projects showcases
 import dierendorpGif from "./images/projects/dierendorp-showcase.gif"
@@ -17,6 +18,7 @@ import fullhouseGif from "./images/projects/fullhouse-showcase.gif"
 import pathfindingGif from "./images/projects/pathfinding-showcase.gif"
 import obfuskeerGif from "./images/projects/obfuskeer-usage.gif"
 import twitterbotGif from "./images/projects/twitterbot-showcase.gif"
+import mazeGeneratorGif from "./images/projects/maze-generator-showcase.gif"
 
 // Social Icons
 import githubIcon from "./images/github.svg"
@@ -33,7 +35,7 @@ function getAge(dateString) {
   return age;
 }
 
-export default {
+const data = {
   // Header Details ---------------------
   name: "Zeynel",
   headerTagline: [
@@ -71,6 +73,7 @@ export default {
     imageSrc: keukenhofIcon,
     showcase: keukenhofIcon,
     source: undefined,
+    demo: undefined,
   },
   {
     title: "Game Mod Menu", 
@@ -83,6 +86,7 @@ export default {
     imageSrc: modmenuIcon,
     showcase: modmenuIcon,
     source: undefined,
+    demo: "https://www.youtube.com/watch?v=1p_bRJyeEMk",
   },
   {
     title: "Dierendorp Game", 
@@ -93,6 +97,7 @@ export default {
     imageSrc: dierendorpIcon,
     showcase: dierendorpGif,
     source: "https://github.com/ZeynelKoca/Game-Development-Project",
+    demo: undefined,
   },
   {
     title: "FullHouse Content Management System", 
@@ -104,6 +109,7 @@ export default {
     imageSrc: fullhouseIcon,
     showcase: fullhouseGif,
     source: "https://github.com/ZeynelKoca/FullHouse-GUI",
+    demo: undefined,
   },
   {
     title: "Pathfinding Visualizer", 
@@ -115,6 +121,7 @@ export default {
     imageSrc: pathfindingIcon,
     showcase: pathfindingGif,
     source: undefined,
+    demo: undefined,
   },
   {
     title: "Obfuskeer", 
@@ -127,6 +134,7 @@ export default {
     imageSrc: obfuskeerIcon,
     showcase: obfuskeerGif,
     source: "https://github.com/ZeynelKoca/Obfuskeer",
+    demo: undefined,
   },
   {
     title: "League of Legends int list",
@@ -138,6 +146,7 @@ export default {
     imageSrc: intListIcon,
     showcase: intListIcon,
     source: "https://github.com/ZeynelKoca/LeagueOfLegends-int-list",
+    demo: undefined,
   },
   {
     title: "Twitter Bot", 
@@ -149,18 +158,33 @@ export default {
     imageSrc: twitterbotIcon,
     showcase: twitterbotGif,
     source: "https://github.com/ZeynelKoca/Twitter-Bot-Twist",
+    demo: "https://twitter.com/TwistUpdater",
   },
   {
     title: "Portfolio Website", 
     paragraphs: [
                 "Obviously, it's the website you're seeing right now. This project was made during my last summer break of university, where I decided it would be a good time to finally create my personal portfolio website after accumulating enough knowledge and projects to showcase.",
-                "I already had some experience with HTML/CSS, but the React environment was completely alien to me. This is one of the reasons why it took quite some time to get something presentable, but in the end I was able to get a responsive website running which is also easily extendable.",
+                "I already had some experience with HTML/CSS, but the React/Gatsby environment was completely alien to me. This is one of the reasons why it took quite some time to get something presentable, but in the end I was able to get a responsive website running which is also easily extendable.",
                 "My knowledge on Javascript and JS frameworks/libraries has also increased immensely after finishing this project, which is sure to be of use later on in my career."
                 ],
     tags: ["React", "Gatsby", "SCSS"],
     imageSrc: portfolioWebsiteIcon,
     showcase: portfolioWebsiteIcon,
     source: "https://github.com/ZeynelKoca/portfolio-website",
+    demo: "/",
+  },
+  {
+    title: "Perfect Maze Generator", 
+    paragraphs: [
+                "This project was originally a programming case assignment by an unnamed company where I was to implement a perfect maze generator in Unity.",
+                "Since I finished the implementation of the generation algorithm within a few hours (of the given 20 hour limit), I decided to implement the A* path finding algorithm as well in this project.",
+                "The workings of both algorithms can be viewed by activating the Animations toggle in their respective menus."
+                ],
+    tags: ["C#", "Pathfinding", "Unity2D"],
+    imageSrc: mazeGeneratorIcon,
+    showcase: mazeGeneratorGif,
+    source: undefined,
+    demo: "/maze-generator",
   },
 
   ],
@@ -182,3 +206,5 @@ export default {
 
   // End Contact Section ---------------
 }
+
+export default data;

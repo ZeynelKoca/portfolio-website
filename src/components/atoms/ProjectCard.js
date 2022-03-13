@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import VerticallyCenteredModal from "./VerticallyCenteredModal"
+import ProjectModal from "./ProjectModal"
 
 const ProjectCard = (props) => {
   const [modalShow, setModalShow] = useState(false);
@@ -12,11 +12,12 @@ const ProjectCard = (props) => {
         backgroundSize: "cover",
       }}
     >
-      <VerticallyCenteredModal
+      <ProjectModal
         heading={props.heading}
         paragraphs={props.paragraphs}
         showcase={props.showcase}
         source={props.source}
+        demo={props.demo}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
