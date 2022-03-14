@@ -6,11 +6,14 @@ import SEO from "../components/seo"
 import Unity, { UnityContext } from "react-unity-webgl"
 
 const unityContext = new UnityContext({
-    loaderUrl: "dungeon_generator/Build/WebGL.loader.js",
-    dataUrl: "dungeon_generator/Build/WebGL.data",
-    frameworkUrl: "dungeon_generator/Build/WebGL.framework.js",
-    codeUrl: "dungeon_generator/Build/WebGL.wasm",
-  });
+  loaderUrl: "dungeon_generator/Build/WebGL.loader.js",
+  dataUrl: "dungeon_generator/Build/WebGL.data",
+  frameworkUrl: "dungeon_generator/Build/WebGL.framework.js",
+  codeUrl: "dungeon_generator/Build/WebGL.wasm",
+  webglContextAttributes: {
+    preserveDrawingBuffer: true
+  }
+});
 
 const DungeonGeneratorPage = () => {
   const [progression, setProgression] = useState(0);
