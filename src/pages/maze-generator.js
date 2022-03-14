@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,20 +10,45 @@ const unityContext = new UnityContext({
   dataUrl: "maze_generator/Build/Builds.data",
   frameworkUrl: "maze_generator/Build/Builds.framework.js",
   codeUrl: "maze_generator/Build/Builds.wasm",
+  webglContextAttributes: {
+    preserveDrawingBuffer: true
+  }
 });
 
-const MazeGenerator = () => (
-  <Layout>
-    <SEO title="Perfect Maze Generator" />
-    <div className="container">
-      <div className="project-header">
-        <h1>Perfect Maze Generator</h1>
+const MazeGenerator = () => {
+  const [progression, setProgression] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    unityContext.on("progress", (progression) => setProgression(progression));
+    unityContext.on("loaded", () => setIsLoaded(true));
+  }, []);
+
+  return (
+    <Layout>
+      <SEO title="Perfect Maze Generator" />
+      <div className="container">
+        <div className="project-header">
+          <h1>Perfect Maze Generator</h1>
+        </div>
+        <div className="canvas-wrapper">
+          {/* The loading screen will be displayed here. */}
+          {isLoaded === false && (
+            <div className="loading-overlay">
+              <div className="progress-bar">
+                <div
+                  className="progress-bar-fill"
+                  style={{ width: progression * 100 + "%" }}
+                />
+              </div>
+            </div>
+          )}
+          {/* The Unity app will be rendered here. */}
+          <Unity className="canvas-wrapper" unityContext={unityContext} />
+        </div>
       </div>
-      <div className="canvas-wrapper">
-        <Unity unityContext={unityContext} className="canvas-wrapper" />
-      </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default MazeGenerator

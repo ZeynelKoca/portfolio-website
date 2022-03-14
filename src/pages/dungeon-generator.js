@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,18 +12,40 @@ const unityContext = new UnityContext({
     codeUrl: "dungeon_generator/Build/WebGL.wasm",
   });
 
-const DungeonGeneratorPage = () => (
-  <Layout>
-    <SEO title="Procedural Dungeon Generator" />
-    <div className="container">
-      <div className="project-header">
-        <h1>Procedural Dungeon Generator</h1>
+const DungeonGeneratorPage = () => {
+  const [progression, setProgression] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    unityContext.on("progress", (progression) => setProgression(progression));
+    unityContext.on("loaded", () => setIsLoaded(true));
+  }, []);
+
+  return (
+    <Layout>
+      <SEO title="Procedural Dungeon Generator" />
+      <div className="container">
+        <div className="project-header">
+          <h1>Procedural Dungeon Generator</h1>
+        </div>
+        <div className="canvas-wrapper">
+          {/* The loading screen will be displayed here. */}
+          {isLoaded === false && (
+            <div className="loading-overlay">
+              <div className="progress-bar">
+                <div
+                  className="progress-bar-fill"
+                  style={{ width: progression * 100 + "%" }}
+                />
+              </div>
+            </div>
+          )}
+          {/* The Unity app will be rendered here. */}
+          <Unity className="canvas-wrapper" unityContext={unityContext} />
+        </div>
       </div>
-      <div className="canvas-wrapper">
-        <Unity unityContext={unityContext} className="canvas-wrapper" />
-      </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  );
+}
 
 export default DungeonGeneratorPage
