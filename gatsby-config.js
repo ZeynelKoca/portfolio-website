@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: ``,
-    author: ``,
+    title: `Zeynel Koca Portfolio`,
+    description: `Zeynel Koca's Software Engineering Portfolio`,
+    author: `Zeynel Koca`,
   },
+  trailingSlash: `never`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

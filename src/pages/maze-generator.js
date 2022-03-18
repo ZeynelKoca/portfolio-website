@@ -48,7 +48,7 @@ const MazeGenerator = () => {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default MazeGenerator
