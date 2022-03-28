@@ -6856,7 +6856,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^2.0.0", "gatsby@^2.12.1", "gatsby@^2.2.0", "gatsby@^2.24.79", "gatsby@^2.25.0", "gatsby@^2.4.0", "gatsby@^4.0.0-next", "gatsby@^4.10.3", "gatsby@>2.0.15":
+"gatsby@^2.0.0", "gatsby@^2.12.1", "gatsby@^2.2.0", "gatsby@^2.24.79", "gatsby@^2.25.0", "gatsby@^2.4.0", "gatsby@^4.0.0-next", "gatsby@^4.4.0", "gatsby@>2.0.15":
   "integrity" "sha512-G6YYwQWrN99KhJgLQl/oy3oKRuTdUcW7Bgb9vRchjY/Apk0eTA2wq33W5L9y+npR3nxly6ZJ2pM8FHw7WX4tKg=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-4.10.3.tgz"
   "version" "4.10.3"
