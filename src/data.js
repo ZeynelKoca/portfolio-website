@@ -56,7 +56,7 @@ const data = {
 
   // About Section --------------
   aboutParaOne: "Based in the Netherlands and growing up in the age of the technological boom, I've always been fascinated by the technologies surrounding me. Naturally, I would play around with computers and other hardware (such as gaming consoles) as I made my way to adulthood.",
-  aboutParaTwo: `Currently, at ${getAge("1999, 10, 26")} years young, I'm a software engineer student at the Hague University of Applied Sciences. During my education I have learned to use a variety of programming languages and technologies, but most importantly: I've learned to learn.`,
+  aboutParaTwo: `Currently, at ${getAge("1999, 10, 26")} years young, I'm a professional software engineer, having graduated from the Hague University of Applied Sciences in 2022. During my education I have learned to use a variety of programming languages and technologies, but most importantly: I've learned to learn.`,
   aboutParaThree: "Thanks to this I was able to further my knowledge in the field by doing my own research and personal projects, aside from university tasks. My toolbox includes programming languages such as C#, Java, Python and more, as well as other tech stacks. Think of web technologies such as the ASP.NET framework, which goes hand in hand with the MVC design pattern and the obvious HTML/CSS and Javascript languages.",
   aboutParaFour: "Some other skills/hobbies of mine, when I'm not cruising around on my motorcycle or playing video games, include reverse engineering and creating games with the Unity game engine.",
   aboutImage: meIcon,
