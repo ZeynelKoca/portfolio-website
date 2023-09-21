@@ -11444,12 +11444,19 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
+"react-tsparticles@^2.12.2":
+  "integrity" "sha512-/nrEbyL8UROXKIMXe+f+LZN2ckvkwV2Qa+GGe/H26oEIc+wq/ybSG9REDwQiSt2OaDQGu0MwmA4BKmkL6wAWcA=="
+  "resolved" "https://registry.npmjs.org/react-tsparticles/-/react-tsparticles-2.12.2.tgz"
+  "version" "2.12.2"
+  dependencies:
+    "tsparticles-engine" "^2.12.0"
+
 "react-unity-webgl@^8.7.4":
   "integrity" "sha512-36iCbNf9oe8jC6oR6RS2NMwQi5uc5lsmFGMVbiZf57JI87LRulikO/aNIL4QSbtUjBDZ0urILwcFKXaRq5Bi5Q=="
   "resolved" "https://registry.npmjs.org/react-unity-webgl/-/react-unity-webgl-8.7.4.tgz"
   "version" "8.7.4"
 
-"react@^16.12.0":
+"react@^16.0.0", "react@^16.12.0", "react@>=16":
   "integrity" "sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
   "version" "16.14.0"
@@ -13291,7 +13298,12 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   "version" "2.3.1"
 
-"tsparticles@^1.37.5":
+"tsparticles-engine@^2.12.0":
+  "integrity" "sha512-ZjDIYex6jBJ4iMc9+z0uPe7SgBnmb6l+EJm83MPIsOny9lPpetMsnw/8YJ3xdxn8hV+S3myTpTN1CkOVmFv0QQ=="
+  "resolved" "https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.12.0.tgz"
+  "version" "2.12.0"
+
+"tsparticles@^1.37.5", "tsparticles@<2.0.0":
   "integrity" "sha512-BQBRnnKKhKH2POwxuHzPiuL/zPUjuR5QmMCFQ2vm3fadE2k4vqmH099m1R9R+nt0lTvWL6SCS0hYQQkqUjsMXg=="
   "resolved" "https://registry.npmjs.org/tsparticles/-/tsparticles-1.37.5.tgz"
   "version" "1.37.5"

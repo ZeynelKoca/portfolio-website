@@ -28,9 +28,6 @@ const Header = () => {
                 <h1>
                   {data.headerTagline[1]}
                 </h1>
-                <h1>
-                  {data.headerTagline[2]}
-                </h1>
               </div>
             </Fade>
             <Fade bottom>
