@@ -30,9 +30,7 @@
     "react-particles-js": "^3.6.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.4",
-    "react-tsparticles": "^2.12.2",
-    "react-unity-webgl": "^8.7.4",
-    "tsparticles": "^1.37.5"
+    "react-unity-webgl": "^8.7.4"
   },
   "devDependencies": {
     "prettier": "2.1.2"
