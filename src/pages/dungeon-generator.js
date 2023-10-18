@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import Unity, { UnityContext } from "react-unity-webgl"
 
@@ -26,7 +26,7 @@ const DungeonGeneratorPage = () => {
 
   return (
     <Layout>
-      <SEO title="Procedural Dungeon Generator" />
+      <Seo title="Procedural Dungeon Generator" />
       <div className="container">
         <div className="project-header">
           <h1>Procedural Dungeon Generator</h1>
