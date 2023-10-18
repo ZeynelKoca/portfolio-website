@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Fade from "react-reveal/Fade"
+import { Fade } from "react-awesome-reveal"
 import emailjs from "emailjs-com"
 import data from "../data.js"
 
@@ -26,12 +26,12 @@ const Contact = () => {
     <div className="section" id="contact">
       <div className="container">
         <div className="contact-wrapper">
-          <Fade bottom cascade delay={100}>
+          <Fade triggerOnce direction="up" cascade>
             <h1>Contact</h1>
             <a href={`mailto:${data.contactEmail}`}>{data.contactEmail}</a>
           </Fade>
 
-          <Fade bottom cascade delay={100}>
+          <Fade triggerOnce direction="up" cascade delay={100}>
             <form className="contact-form" onSubmit={sendEmail}>
               <input type="hidden" name="contact_number" />
               <label htmlFor="form-name">Name</label>
@@ -39,7 +39,7 @@ const Contact = () => {
               <label htmlFor="form-email">Email *</label>
               <input type="email" name="user_email" id="form-email" required />
               <label htmlFor="form-message">Message *</label>
-              <textarea name="message" required id="form-message" />
+              <textarea name="message" required id="form-message" style={{height: "200px"}} />
               <input type="submit" value="Send" className="form-send" />
             </form>
           </Fade>

@@ -1,5 +1,5 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
+import { Fade } from "react-awesome-reveal"
 import data from "../data"
 
 const About = () => {
@@ -9,10 +9,10 @@ const About = () => {
         <div className="center-screen">
           <div className="about-section">
             <div className="content">
-              <Fade bottom cascade delay={100}>
+              <Fade triggerOnce direction="up" cascade delay={100}>
                 <h1>About Me</h1>
               </Fade>
-              <Fade bottom cascade delay={100}>
+              <Fade triggerOnce direction="up" cascade delay={100}>
                 <div>
                   <p>
                     <br></br>
@@ -35,7 +35,7 @@ const About = () => {
                 </div>
               </Fade>
             </div>
-            <Fade right cascade delay={100}>
+            <Fade triggerOnce direction="right" cascade delay={100}>
               <div className="image-wrapper">
                 <img src={data.aboutImage} alt="about" className="about-img" />
               </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
+import { Fade } from "react-awesome-reveal"
 import data from "../data"
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="section" id="footer">
       <div className="container footer-container">
         <div className="social-icon">
-          <Fade bottom cascade delay={100} >
+          <Fade triggerOnce direction="up" delay={100} >
             {data.social.map((socialLink, index) => (
               <a
                 key={index}
@@ -20,9 +20,9 @@ const Footer = () => {
             ))}
           </Fade>
         </div>
-        <Fade bottom cascade delay={100}>
+        <Fade triggerOnce direction="up" cascade delay={100}>
           <div>
-            <p>Zeynel Koca <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2021</p>
+            <p>Zeynel Koca <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2023</p>
           </div>
         </Fade>
       </div>
