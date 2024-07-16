@@ -11,6 +11,7 @@ import Particles from 'react-tsparticles';
 import { loadFull } from "tsparticles";
 import ParticlesConfig from '../config/ParticlesConfig';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/mains.scss"
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Analytics />
+      <SpeedInsights />
       <Navbar />
       <main>
         <div className="particles">
