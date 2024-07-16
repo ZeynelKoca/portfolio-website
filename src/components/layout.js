@@ -10,6 +10,7 @@ import Navbar from "./Navbar"
 import Particles from 'react-tsparticles';
 import { loadFull } from "tsparticles";
 import ParticlesConfig from '../config/ParticlesConfig';
+import { Analytics } from "@vercel/analytics/react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/mains.scss"
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
   };
   return (
     <>
+      <Analytics />
       <Navbar />
       <main>
         <div className="particles">
