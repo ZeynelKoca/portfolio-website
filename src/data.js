@@ -100,19 +100,6 @@ const data = {
     demo: undefined,
   },
   {
-    title: "Perfect Maze Generator", 
-    paragraphs: [
-                "This project was originally a programming case assignment by an unnamed company where I was to implement a perfect maze generator in Unity.",
-                "Since I finished the implementation of the generation algorithm within a few hours (of the given 20 hour limit), I decided to implement the A* path finding algorithm as well in this project.",
-                "The workings of both algorithms can be viewed by activating the Animations toggle in their respective menus."
-                ],
-    tags: ["C#", "Pathfinding", "Unity2D"],
-    imageSrc: mazeGeneratorIcon,
-    showcase: mazeGeneratorGif,
-    source: undefined,
-    demo: "/maze-generator",
-  },
-  {
     title: "Obfuskeer", 
     paragraphs: [
                 "During the same summer where I was heavily invested in software security, I ended up getting creating this console application for obfuscation purposes. At the time, (free) obfuscation tools were quite hard to come by and when they weren't, worked horrendously.",
@@ -124,6 +111,19 @@ const data = {
     showcase: obfuskeerGif,
     source: "https://github.com/ZeynelKoca/Obfuskeer",
     demo: undefined,
+  },
+  {
+    title: "Perfect Maze Generator", 
+    paragraphs: [
+                "This project was originally a programming case assignment by an unnamed company where I was to implement a perfect maze generator in Unity.",
+                "Since I finished the implementation of the generation algorithm within a few hours (of the given 20 hour limit), I decided to implement the A* path finding algorithm as well in this project.",
+                "The workings of both algorithms can be viewed by activating the Animations toggle in their respective menus."
+                ],
+    tags: ["C#", "Pathfinding", "Unity2D"],
+    imageSrc: mazeGeneratorIcon,
+    showcase: mazeGeneratorGif,
+    source: undefined,
+    demo: "/maze-generator",
   },
   {
     title: "Pathfinding Visualizer", 
