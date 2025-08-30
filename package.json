@@ -4,6 +4,10 @@
   "description": "Portfolio",
   "version": "0.1.0",
   "author": "Zeynel Koca <zeynel.koca@outlook.com>",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
