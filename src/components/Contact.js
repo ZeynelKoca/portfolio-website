@@ -10,13 +10,13 @@ const Contact = () => {
     setStatus("Processing..");
     e.preventDefault();
 
-    emailjs.sendForm('service_njs1e2l', 'template_7o9x2ft', e.target, 'user_A0TYilXGUenl9WWFcHixg')
+    emailjs.sendForm('service_5cqev69', 'template_7o9x2ft', e.target, 'user_A0TYilXGUenl9WWFcHixg')
       .then((result) => {
           console.log(result.text);
           setStatus("Successfully sent your message")
       }, (error) => {
           console.log(error.text);
-          setStatus("Oops.. Something went wrong");
+          setStatus("Oops.. Something went wrong. Contact me directly through my email: zeynel.koca@outlook.com");
       });
 
     e.target.reset();
@@ -44,7 +44,7 @@ const Contact = () => {
             </form>
           </Fade>
 
-          <h4>{status}</h4>
+          <h4 style={{textAlign: "center"}}>{status}</h4>
 
         </div>
       </div>

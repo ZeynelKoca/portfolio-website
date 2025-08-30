@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <Fade triggerOnce direction="up" cascade delay={100}>
           <div>
-            <p>Zeynel Koca <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2024</p>
+            <p>Zeynel Koca <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> {new Date().getFullYear()}</p>
           </div>
         </Fade>
       </div>
