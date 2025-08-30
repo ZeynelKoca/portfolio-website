@@ -44,7 +44,7 @@ const DungeonGeneratorPage = () => {
             </div>
           )}
           {/* The Unity app will be rendered here. */}
-          <Unity className="canvas-wrapper" unityContext={unityContext} />
+          <Unity unityContext={unityContext} style={{width: "100%" }} />
         </div>
       </div>
     </Layout>
