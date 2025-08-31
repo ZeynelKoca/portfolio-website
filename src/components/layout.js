@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import Navbar from "./Navbar"
-import Particles from 'react-tsparticles';
-import { loadFull } from "tsparticles";
+import Particles, { initParticlesEngine} from '@tsparticles/react';
+import { loadSlim } from "@tsparticles/slim";
 import ParticlesConfig from '../config/ParticlesConfig';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -17,14 +17,16 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/mains.scss"
 
 const Layout = ({ children }) => {
-  const particlesInit = async (main) => {
-    console.log(main);
+  useEffect(() => {
+    const loadParticles = async () => {
+        await initParticlesEngine(async (engine) => {
+          await loadSlim(engine);
+        });
+    };
+    
+    loadParticles();
+  }, []);
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(main);
-  };
   return (
     <>
       <Analytics />
@@ -32,7 +34,10 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>
         <div className="particles">
-          <Particles init={particlesInit} height="auto" width="100vw" options={ParticlesConfig} />
+          <Particles 
+            id="tsparticles"
+            options={ParticlesConfig}
+          />
         </div>
         {children}
       </main>
