@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Fade } from "react-awesome-reveal"
-import emailjs from "emailjs-com"
+import emailjs from "@emailjs/browser"
 import data from "../data.js"
 
 const Contact = () => {
