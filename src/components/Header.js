@@ -15,7 +15,7 @@ const Header = () => {
             <Fade triggerOnce direction="up" cascade>
               <h2>
                 Hi, I'm {data.name}{" "}
-                <span role="img" aria-label="Emoji">
+                <span role="img" aria-label="Emoji" className="wave-emoji">
                   👋
                 </span>
               </h2>
